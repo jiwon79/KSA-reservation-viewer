@@ -1,8 +1,8 @@
 import axios from "axios";
 
 export const instance = axios.create({
-    // baseURL: "https://ksa-seminar-res-backend.herokuapp.com/",
-    baseURL: "http://localhost:3000/",
+    baseURL: "https://ksa-seminar-res-backend.herokuapp.com/",
+    // baseURL: "http://localhost:3000/",
 });
 
 const responseBody = (response) => response.data;
