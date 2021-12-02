@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const instance = axios.create({
-    baseURL: "https://ksa-seminar-res-backend.herokuapp.com/",
+    // baseURL: "https://ksa-seminar-res-backend.herokuapp.com/",
+    baseURL: "http://localhost:3000/",
 });
 
 const responseBody = (response) => response.data;
@@ -15,6 +16,8 @@ const requests = {
 
 export const Reservation = {
     getReservationList: async () => requests.get('log/seminar'),
+    getUserLog: async (body) => requests.post('log/userLog', body),
+    getDayLog: async (body) => requests.post('log/dayLog', body),
     // getAccount: async (sid) => requests.get(`account/${sid}`),
     // createAccount: async (sid, body) =>
     //     requests.post(`account/${sid}`, body),
