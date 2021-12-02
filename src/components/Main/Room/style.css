@@ -45,6 +45,12 @@
   border: 1px solid black;
 }
 
+.time {
+  position: absolute;
+  padding-left: 2px;
+  font-size: 14px;
+}
+
 .fill {
   text-align: center;
   background-color: #E4E4E4;
