@@ -1,10 +1,11 @@
 import React from 'react'
 
+import Header from '../components/Main/Header/'
+
 export default function Main() {
   return (
     <div>
-      mainsdaasdfdfs
-      한긇ㄴ한글
+      <Header />
     </div>
   )
 }
