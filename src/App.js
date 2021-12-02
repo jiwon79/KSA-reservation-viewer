@@ -3,6 +3,9 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 
 import './App.css';
 import Main from './Screens/Main';
+import Admin from './Screens/Admin';
+import Log from './Screens/Log'
+import Teacher from './Screens/Teacher'
 
 function App() {
   return (
@@ -10,6 +13,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main/>} />
+          <Route path="/admin" element={<Admin/>} />
+          <Route path="/log" element={<Log/>} />
+          <Route path="/teacher" element={<Teacher/>} />
         </Routes>
       </Router>
     </div>
