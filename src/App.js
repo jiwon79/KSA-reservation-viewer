@@ -6,6 +6,7 @@ import Main from './Screens/Main';
 import Admin from './Screens/Admin';
 import Log from './Screens/Log'
 import Teacher from './Screens/Teacher'
+import Footer from './components/Main/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/log" element={<Log/>} />
           <Route path="/teacher" element={<Teacher/>} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );
