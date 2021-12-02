@@ -8,7 +8,7 @@ export default function Admin() {
     <div>
       <Header/>
       <ul>
-        <li><Link to="/teacher">선생님 에약 페이지</Link></li>
+        <li><Link to="/teacher">선생님 예약 페이지</Link></li>
         <li><Link to="/log">로그</Link></li>
       </ul>
     </div>
