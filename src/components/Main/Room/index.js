@@ -3,7 +3,6 @@ import React from 'react'
 import './style.css'
 
 export default function Room({room, name, number}) {
-  console.log(name, number);
   const timeList = Array('1', '2', '3', '4', '점심', '5', '6', '7', '8', '9', '저녁', '10', '11', '12', '13');
   const list = name.map((name, index) => {
     if (name === '-') return <div className="box empty"><div className="time">{timeList[index]}</div></div>

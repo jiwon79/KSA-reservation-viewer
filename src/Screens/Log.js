@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 import Header from "../components/Admin/Header";
 import SelectDate from "../components/Log/SelectDate";
+import LogList from "../components/Log/LogList";
 
 export default function Log() {
   const [logDate, setLogDate] = useState(new Date());
@@ -14,7 +15,7 @@ export default function Log() {
     <div>
       <Header />
       <SelectDate logDate={logDate} handleLogDate={handleLogDate}/>
-      log
+      <LogList logDate={logDate}/>
     </div>
   )
 }
